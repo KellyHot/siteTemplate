@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery page</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="./index.html" class="nav-link">
+        Welcome
+      </a>
+      <a href="./gallery.html" class="nav-link">
+        Gallery
+      </a>
+      <a href="./game.html" class="nav-link">
+        Game
+      </a>
+      <a href="./jobs.html" class="nav-link">
+        Jobs
+      </a>
+      <a href="./feedback.html" class="nav-link">
+        Feedback
+      </a>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="h1"> Gallery </h1>
+    <div class="radio">
+      <input class="input" type="radio" name="slider" id="default" checked>
+      <label class="label" data-id="default" for="default">
+        <div class="round"></div>
+        Default
+      </label>
+      <input class="input" type="radio" name="slider" id="scale">
+      <label class="label" data-id="scale" for="scale">
+        <div class="round"></div>
+        Scale
+      </label>
+      <input class="input" type="radio" name="slider" id="3d">
+      <label class="label" data-id="3d" for="3d">
+        <div class="round"></div>
+        3D
+      </label>
+    </div>
+    <div class="container js-container">
+      <div class="wrapper">
+        <img class="slide slide--3d js-slide" src="./images/slide1.jpg" alt="slide">
+        <img class="slide slide--3d js-slide" src="./images/slide2.jpg" alt="slide">
+        <img class="slide slide--3d js-slide" src="./images/slide3.jpg" alt="slide">
+        <img class="slide slide--3d js-slide" src="./images/slide4.jpg" alt="slide">
+        <img class="slide slide--3d js-slide" src="./images/slide5.jpg" alt="slide">
+      </div>
+      <button type="button" class="button button--prev js-button--prev">
+        <div class="button-arrow"></div>
+      </button>
+      <button type="button" class="button button--next js-button--next">
+          <div class="button-arrow"></div>
+      </button>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer-copyright">
+      &#169; ООО «Реверс полярити»
+    </p>
+    <p class="footer-year">
+      2019 год
+    </p>
+  </footer>
+  <script src="./script/script.js"></script>
+</body>
+</html>
